@@ -84,7 +84,7 @@ function limpiarCaja(){
 function reiniciarJuego(){
     //Limpiar la Caja
     limpiarCaja();
-
+    
     /*
     Indicar mendaje de intervalo de números
     Generar el numero aleatorio
@@ -102,6 +102,7 @@ function reiniciarJuego(){
 function condicionesIniciales(){
     asignarTextoElemento('h1',"Juego Adivina El Numero SECRETO");
     asignarTextoElemento('p',`Ingresa un número del 1 al ${numeroMaximo}`);
+    intentos= 0;
     numeroSecreto = generaNumeroSecreto(numeroMaximo);
 }
 
