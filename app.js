@@ -24,6 +24,7 @@ function verificarIntento(){
         asignarTextoElemento('p',`Felicidades, Acertaste el Número secreto ${numeroSecreto}, en ${intentos} ${(intentos === 1) ? 'intento' : 'intentos'}`);
         document.getElementById('reiniciar').removeAttribute('disabled');
         document.querySelector('#intentar').setAttribute('disabled', 'true');
+        intentos= 0;
         //document.getElementById('intentar').addAttribute('disabled');
     } else{
 
